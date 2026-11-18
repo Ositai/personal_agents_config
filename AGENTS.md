@@ -35,7 +35,7 @@ After each completed task, briefly consider what worked, what failed or caused d
 
 ## Work State Management
 
-Consult this `WORK_STATE` section before new reasoning. For work that may continue in another iteration, replace the placeholders with verified task-specific facts before ending. Keep the state concise and clear it when the task is complete.
+Consult this `WORK_STATE` section before new reasoning. Before ending any iteration, update it: record verified task-specific facts for a handoff, or reset it after verified completion. Keep the state concise.
 
 ### WORK_STATE
 
@@ -55,6 +55,7 @@ Consult this `WORK_STATE` section before new reasoning. For work that may contin
 - If progress stalls, recognize repeated reasoning, circular plans, or tool calls that add no evidence. After multiple unproductive attempts, record the blocker and next action, then hand off rather than looping.
 - Resume from `WORK_STATE`; do not make a future iteration rediscover verified facts.
 - When available, use tool-driven continuation for unfinished work; do not signal termination while objectives remain unresolved.
+- Conceptually, unfinished work continues through tool calls; only completed, verified work ends with a stop signal.
 
 ## Completion Rules
 
